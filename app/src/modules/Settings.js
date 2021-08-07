@@ -74,6 +74,24 @@ const SettingModule = ({ themHandler }) => {
                             </svg>
                         </div>
                     </Link>
+                    <div className="zl_setting_list_items">
+                        <div className="zl_setting_items_heading_peregraph">
+                            <h3>Change Theme</h3>
+                            <p>Enable or Disable Dark Mode</p>
+                        </div>
+                        <Form.Check
+                            type="switch"
+                            id='checkbox2'
+                            label=""
+                            className="zl_custom_currency_checkbox"
+                            checked={color}
+                            onChange={() => {
+                                setColor(!color);
+                                themHandler(color);
+                            }}
+                        />
+                    </div>
+
 
                     <h3 className="zl_bottom_content_heading">Personal</h3>
                     <Link to={'/'} className="zl_setting_list_items">
@@ -205,7 +223,7 @@ const SettingModule = ({ themHandler }) => {
                     </Link>
                     <Link to={'/'} className="zl_setting_list_items">
                         <div className="zl_setting_items_heading_peregraph">
-                            <h3>Close Account</h3>
+                            <h3 style={{ color: 'red' }}>Close Account</h3>
                             <p>Close your Account</p>
                         </div>
                         <div className="zl_setting_items_right_text">
@@ -227,37 +245,8 @@ const SettingModule = ({ themHandler }) => {
                     </Link>
 
 
-                    <h3 className="zl_bottom_content_heading">Other</h3>
-                    <div className="zl_setting_list_items">
-                        <div className="zl_setting_items_heading_peregraph">
-                            <h3>Notification</h3>
-                            <p>Show a notification when funds are received</p>
-                        </div>
-                        <Form.Check
-                            type="switch"
-                            id='checkbox1'
-                            label=""
-                            className="zl_custom_currency_checkbox"
-                            defaultChecked
-                        />
-                    </div>
-                    <div className="zl_setting_list_items">
-                        <div className="zl_setting_items_heading_peregraph">
-                            <h3>Change Theme Mode</h3>
-                            <p>Lorem ipsum is simply dummy text of the printing & industry.</p>
-                        </div>
-                        <Form.Check
-                            type="switch"
-                            id='checkbox2'
-                            label=""
-                            className="zl_custom_currency_checkbox"
-                            checked={color}
-                            onChange={() => {
-                                setColor(!color);
-                                themHandler(color);
-                            }}
-                        />
-                    </div>
+
+
                 </div>
             </section>
         </>
