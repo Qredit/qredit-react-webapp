@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Requirements
+
+Base OS = Ubuntu 20 <br />
+<br />
+Install:
+
+```
+apt-get update
+apt-get -y install fail2ban nodejs git npm
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
