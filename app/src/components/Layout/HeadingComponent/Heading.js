@@ -14,7 +14,7 @@ const HeadingModule = (props) => {
             <div className="zl_all_page_heading_section">
                 <div className="zl_all_page_heading">
                     <h2>{props.name}</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing & industry.</p>
+                    <p>Username or business name</p>
                 </div>
                 <div className="zl_all_page_notify_logout_btn">
                     <Dropdown className="zl_all_page_notification_dropdown">

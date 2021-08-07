@@ -80,8 +80,8 @@ class WelcomeModule extends React.Component {
                             <li className="zl_welcome_slide_indicator_items" title={this.state.currentStep}></li>
                             <li className="zl_welcome_slide_indicator_items" title={this.state.currentStep}></li>
                         </ul>
-                        <h2 className="zl_welcome_slide_heading">Welcome to crypto</h2>
-                        <p className="zl_welcome_slide_peregraph">Lorem Ipsum is simply dummy text of the printing & industry.</p>
+                        <h2 className="zl_welcome_slide_heading">Welcome to Qredit Motion</h2>
+                        <p className="zl_welcome_slide_peregraph">The new and revolutionary Qredit Motion App empowers users to spend a broad range of crypto and fiat currencies with real-time conversion at point-of-sale and low exchange fees.</p>
                         {this.nextButton()}
                     </React.Fragment>
                 </div>
@@ -96,8 +96,8 @@ function Step1(props) {
     }
     return (
         <div className="zl_welcome_slide_img">
-            <img src="assets/image/welcome-slider1.png" alt="wizard-img" className="img-fluid zl_dark_theme_slide_img" />
-            <img src="assets/image/light-welcome-slider1.png" alt="wizard-img" className="img-fluid zl_light_theme_slide_img" />
+            <img src="assets/img/1.png" alt="wizard-img" className="img-fluid zl_dark_theme_slide_img" />
+            <img src="assets/img/1.png" alt="wizard-img" className="img-fluid zl_light_theme_slide_img" />
         </div>
     );
 }
@@ -108,8 +108,8 @@ function Step2(props) {
     }
     return (
         <div className="zl_welcome_slide_img">
-            <img src="assets/image/welcome-slider2.png" alt="wizard-img" className="img-fluid zl_dark_theme_slide_img" />
-            <img src="assets/image/light-welcome-slider2.png" alt="wizard-img" className="img-fluid zl_light_theme_slide_img" />
+            <img src="assets/img/2.png" alt="wizard-img" className="img-fluid zl_dark_theme_slide_img" />
+            <img src="assets/img/2.png" alt="wizard-img" className="img-fluid zl_light_theme_slide_img" />
         </div>
     );
 }
@@ -121,11 +121,11 @@ function Step3(props) {
     return (
         <React.Fragment>
             <div className="zl_welcome_slide_img">
-                <img src="assets/image/welcome-slider3.png" alt="wizard-img" className="img-fluid zl_dark_theme_slide_img" />
-                <img src="assets/image/light-welcome-slider3.png" alt="wizard-img" className="img-fluid zl_light_theme_slide_img" />
+                <img src="assets/img/3.png" alt="wizard-img" className="img-fluid zl_dark_theme_slide_img" />
+                <img src="assets/img/3.png" alt="wizard-img" className="img-fluid zl_light_theme_slide_img" />
             </div>
-            <Link to={'/dashboard'} className="zl_welcome_slide_step_btns">Get Started</Link>
-            <Link to={'/login'} className="zl_welcome_slide_already_wallet">I already have wallet</Link>
+            <Link to={'/dashboard'} className="zl_welcome_slide_step_btns">Register</Link>
+            <Link to={'/login'} className="zl_welcome_slide_already_wallet">Login</Link>
         </React.Fragment>
     );
 }
