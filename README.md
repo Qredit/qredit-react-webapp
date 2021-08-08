@@ -1,1 +1,1 @@
-# qredit-react-native
+# qredit-react-webapp
